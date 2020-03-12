@@ -1,16 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+:root {
+  --main-font: 'Lato', sans-serif;
+  --header-width: 400px;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-family: var(--main-font);
 }
 
 .App-header {
@@ -20,19 +17,28 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-sarch {
+  max-width: var(--header-width);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-tile {
+  width: var(--header-width);
+}
+
+.App-input {
+  border-style: none;
+  height: 40px;
+  width: var(--header-width);
+  font-size: 20px;
+}
+
+.App-items {
+  width: 700px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
